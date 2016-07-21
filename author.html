@@ -25,6 +25,13 @@
     <script src="assets/js/vendor/modernizr-2.7.1.min.js"></script>
       
     <link href="assets/fonts/raleway.css" rel="stylesheet">
+    
+    <script src="assets/js/vendor/jquery-2.1.0.min.js"></script>
+    <script>$(function(){
+    $("#contentloader").load("http://lib.designer.web.id/content-author.html");
+    $("#rightloader").load("http://lib.designer.web.id/content-right.html"); 
+    $("#leftloader").load("http://lib.designer.web.id/content-left.html"); 
+    });</script> 
       
   </head>
   
@@ -60,28 +67,8 @@
           <div class="opacity-overlay-gradient"></div>
         </div>
 
-        <div class="share-counter">
-          <div>
-            <h3>438</h3>
-            <p class="grey-text">Post</p>
-          </div>
-          <div>
-            <h3>86k</h3>
-            <p class="grey-text">Follower</p>
-          </div>
-          <div>
-            <h3>1.6k</h3>
-            <p class="grey-text">Following</p>
-          </div>
-        </div>
+        <div id="contentloader"></div>
 
-        <!-- Contents -->
-        <div class="p-20">
-            
-            <a class="twitter-timeline" href="https://twitter.com/faridiot">Tweets by faridiot</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BHdelWMgrnc/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">1,000+ installs :), tutorial coreldraw, @idwebdesigner android apps on google play, bit.ly/coreldraw-app</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Foto kiriman farid (dari belakang) (@ahmadfaridmubarok) pada <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-07-05T01:01:13+00:00">Jul 4, 2016 pada 6:01 PDT</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-
-        </div>
       </div> 
       <!-- End of Page Contents -->
 
@@ -91,13 +78,13 @@
         <li class="sidenav-avatar" style="background:#B0A437;">
           <div class="bottom">
             <!-- Dropdown Trigger -->
-            <span class="dropdown-button waves-effect waves-light" data-activates="dropdown1"><img src="img/js.png" style="width:10%; float:left; margin-left: -15px; margin-top: 13px; margin-right: 10px; ">Database Javascript<i class="ion-android-arrow-dropdown right"></i></span>
+            <span class="dropdown-button waves-effect waves-light" data-activates="dropdown1"><img src="assets/img/js.png" style="width:10%; float:left; margin-left: -15px; margin-top: 13px; margin-right: 10px; ">Database Javascript<i class="ion-android-arrow-dropdown right"></i></span>
             <!-- Dropdown Structure -->
             <ul id="dropdown1" class="dropdown-content">
-              <li><a href="index.html"><img src="img/js.png" style="width:10%; float:left; margin-left: -3px; margin-top: -3px; margin-right: 10px; ">Javascript Database</a></li>
-              <li><a href="css.html"><img src="img/css.png" style="width:10%; float:left; margin-left: -3px; margin-top: -3px; margin-right: 10px; ">CSS Database</a></li>
-              <li><a href="cms.html"><img src="img/cms.png" style="width:10%; float:left; margin-left: -3px; margin-top: -3px; margin-right: 10px; ">CMS Database</a></li>
-              <li><a href="html.html"><img src="img/html.png" style="width:10%; float:left; margin-left: -3px; margin-top: -3px; margin-right: 10px; ">HTML5 Library</a></li>
+              <li><a href="js-library.html"><img src="assets/img/js.png" style="width:10%; float:left; margin-left: -3px; margin-top: -3px; margin-right: 10px; ">Javascript Database</a></li>
+              <li><a href="css.html"><img src="assets/img/css.png" style="width:10%; float:left; margin-left: -3px; margin-top: -3px; margin-right: 10px; ">CSS Database</a></li>
+              <li><a href="cms.html"><img src="assets/img/cms.png" style="width:10%; float:left; margin-left: -3px; margin-top: -3px; margin-right: 10px; ">CMS Database</a></li>
+              <li><a href="html.html"><img src="assets/img/html.png" style="width:10%; float:left; margin-left: -3px; margin-top: -3px; margin-right: 10px; ">HTML5 Library</a></li>
               <li class="divider"></li>
               <li><a href="unlock.html">Unlock Library<i class="ion-ios-gear"></i></a></li>
             </ul>
