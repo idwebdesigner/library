@@ -35,15 +35,41 @@
     $("#leftloader").load("http://lib.designer.web.id/content-left.html"); 
     });</script>
       
+    <style>#hideMe {
+    -moz-animation: cssAnimation 0s ease-in 15s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 15s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 15s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 15s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    }
+    @keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+    }
+    @-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+    }</style>
+      
     <script>setInterval(function) {
       $.ajax({
-      url : "assets/img/js.png",/* or other resource */
+      url : "http://file.designer.web.id/database/js.html",/* or other resource */
       type: "HEAD"
       })
       .done(function() {
       location.reload();
       });
-      }, 6000;</script>
+}, 6000;</script>
       
   </head>
   
@@ -105,13 +131,11 @@
             online({ type: 'ready' });
             </script>
           
-            <span style="position:absolute;z-index:10;">
             <div id="contentloader"></div>
             <div id="contentloader2"></div>
             <div id="contentloader2"></div>
-            </span>
           
-            <div style="position:relative;z-index:1;"><a href="javascript:window.location.reload();"><br/><br/><br/><br/><br/><br/><img style="width:20%;color:grey; display: block; margin: 0 auto;opacity: 0.9;" src="assets/img/reload.png"> <br/><br/><br/><br/><br/><br/><br/></a></div>
+            <a href="javascript:window.location.reload();"><div id='hideMe'><br/><br/><br/><br/><br/><br/><img style="width:20%;color:grey; display: block; margin: 0 auto;opacity: 0.2;" src="assets/img/reload.svg"> <br/><br/><br/><br/><br/><br/><br/></div></a>
       </div>
 
 
