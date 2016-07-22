@@ -2407,3 +2407,18 @@ span.data-color {
   background: #B0A437;
   text-decoration: none;
 }
+
+.lockstatus {
+    margin-right:-7px;
+    margin-bottom:-17px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 18px;
+}
