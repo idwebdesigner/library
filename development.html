@@ -52,7 +52,9 @@
         height:0;
         visibility:hidden;
     }
-    }</style>
+    }
+      #hideMe:hover {opacity: 0;};
+      </style>
       
     <script>$(function(){
     $("#contentloader").load("http://lib.designer.web.id/content-development.html");
@@ -126,7 +128,7 @@
             <div id="contentloader" style="background:none;"></div>
             <div id="contentloader2"></div>
             
-            <a href="javascript:window.location.reload();"><div id='hideMe'><br/><br/><br/><br/><img style="width:20%;color:grey; display: block; margin: 0 auto;opacity: 0.9;" src="assets/img/reload.png"><br/><br/><br/><br/><br/><br/></div></a>
+            <div onclick="javascript:window.location.reload();" style="cursor:pointer; position:relative;z-index:1;" id='hideMe'><img style="width:15%;display: block; margin: 0 auto;opacity: 0.5; padding-top:20%;padding-bottom:40%;" src="assets/img/reload.png"></div>
           </div>
       
       </div> 

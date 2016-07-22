@@ -79,7 +79,7 @@
 
             function online(event) {
               statusElem.className = navigator.onLine ? 'online' : 'offline';
-              statusElem.innerHTML = navigator.onLine ? '<br/>You&#39;re connected our server database,<br/>ERR_DATA_LOCKED<br/><br/>Purchase $3 to Unlock library.' : '<br/>You&#39;re offline, check network connection.<br/>content required internet access.<br/><br/>A Project by IDWEBDesigner';
+              statusElem.innerHTML = navigator.onLine ? '<br/>You&#39;re connected our server database,<br/>ERR_DATA_LOCKED<br/><br/>Purchase $3 to Unlock library.' : '<br/>You&#39;re offline, check network connection.<br/>content required internet access.<br/><br/>Unlock / <a href="js-library.html"><u>Back to Free Library</u></a>';
               state.innerHTML += '';
             }
 
@@ -96,7 +96,7 @@
                 <!-- Unlock -->
                 <div class="animated bouncein delay-6">
                 <div class="unlock">
-                <a href="js-library.html"><i class="ion-android-lock"></i></a>
+                <a href="unlock.html"><i class="ion-android-lock"></i></a>
                 </div>
                 </div>
             </span>
