@@ -12,7 +12,7 @@
     <meta name="mobile-web-app-capable" content="yes">
 
     <style>html {
-        background: #80771E;
+        background: black;
     }</style>
 
     <link href="assets/fonts/raleway.css" rel="stylesheet">
@@ -59,13 +59,13 @@
       <!-- End of Toolbar -->
 
       <!-- Page Contents -->
-      <div class="page fullscreen bg-1 valign-wrapper animated fadeinup">
+      <div class="page fullscreen valign-wrapper animated fadeinup">
         <div class="opacity-overlay"></div>
         <!-- Page Center -->
         <div class="valign">
           <div class="center-align animated fadein delay-1">
             <img src="assets/img/js.png" style="width:30%; margin-left: 35%; ">
-              <h4 class="white-text" style="margin-top:10px;">DATABASE NOT FOUND<br/> OR FILE LOCKED</h4>
+              <h4 class="white-text" style="margin-top:10px;">DATABASE NOT FOUND<br/> OR STILL IN UPDATE</h4>
               
             <H6 class="white-text small" style="line-height: 1.5rem;margin-left:0px;";>
               
@@ -79,7 +79,7 @@
 
             function online(event) {
               statusElem.className = navigator.onLine ? 'online' : 'offline';
-              statusElem.innerHTML = navigator.onLine ? '<br/>You&#39;re connected our server database,<br/>ERR_DATA_LOCKED<br/><br/>Purchase $3 to Unlock library.' : '<br/>You&#39;re offline, check network connection.<br/>content required internet access.<br/><br/>Unlock / <a href="js-library.html"><u>Back to Free Library</u></a>';
+              statusElem.innerHTML = navigator.onLine ? '<br/>You&#39;re connected our server database,<br/><br/>Install HTML5 Library: A Full JavaScript libraries,<br/>frameworks, and plugins. CSS, Sass, LESS and<br/>Stylus libraries, and CMS.' : '<br/>You&#39;re offline, check network connection.<br/>content required internet access.<br/><br/>Upgrade / <a href="js-library.html"><u>Back to Free Library</u></a>';
               state.innerHTML += '';
             }
 
@@ -96,7 +96,7 @@
                 <!-- Unlock -->
                 <div class="animated bouncein delay-6">
                 <div class="unlock">
-                <a href="unlock.html"><i class="ion-android-lock"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=id.web.designer.html5library"><i class="ion-android-playstore"></i></a>
                 </div>
                 </div>
             </span>
@@ -118,7 +118,7 @@
       <!-- Sidebars -->
       <!-- Left Sidebar -->
       <ul id="slide-out-left" class="side-nav collapsible">
-        <li class="sidenav-avatar" style="background:#B0A437;">
+        <li class="sidenav-avatar" style="background:black;">
           <div class="bottom">
             <!-- Dropdown Trigger -->
             <span class="dropdown-button waves-effect waves-light" data-activates="dropdown1"><img src="assets/img/js.png" style="width:10%; float:left; margin-left: -15px; margin-top: 13px; margin-right: 10px; ">Database Javascript<i class="ion-android-arrow-dropdown right"></i></span>

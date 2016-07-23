@@ -125,9 +125,11 @@
             online({ type: 'ready' });
             </script>
             
-            <div id="contentloader" style="background:none;"></div>
+            <span style="position:absolute;z-index:10;">
+            <div id="contentloader"></div>
             <div id="contentloader2"></div>
-            
+            </span>
+          
             <div onclick="javascript:window.location.reload();" style="cursor:pointer; position:relative;z-index:1;" id='hideMe'><img style="width:15%;display: block; margin: 0 auto;opacity: 0.5; padding-top:20%;padding-bottom:40%;" src="assets/img/reload.png"></div>
           </div>
       
