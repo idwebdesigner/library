@@ -29,7 +29,7 @@
     <script>$(function(){
     $("#contentloader").load("http://lib.designer.web.id/content-js.html");
     $("#contentloader2").load("http://lib.designer.web.id/content-js2.html"); 
-    $("#contentloader3").load("content-js3.html"); 
+    $("#contentloader3").load("http://lib.designer.web.id/content-js3.html"); 
     $("#footer").load("http://lib.designer.web.id/content-footer.html"); 
     $("#rightloader").load("http://lib.designer.web.id/content-right.html"); 
     $("#leftloader").load("http://lib.designer.web.id/content-left.html"); 
@@ -72,15 +72,6 @@
       location.reload();
       });
       }, 6000;</script>
-      
-    <script>
-      document.getElementById('setSize').style.width=window.innerWidth/5 + 'px';
-document.getElementById('setSize').style.height='100px';
-
-// Using setTimeout to simulate the loading of the image.
-setTimeout(function(){
-document.getElementById('setSize').src='assets/img/js.png'}, 1000);
-      </script>
       
   </head>
   
@@ -143,10 +134,9 @@ document.getElementById('setSize').src='assets/img/js.png'}, 1000);
             </script>
           
             <span style="position:absolute;z-index:10;">
-            <div id="contentloader3"></div>
             <div id="contentloader"></div>
             <div id="contentloader2"></div>
-            
+            <div id="contentloader3"></div>
             </span>
           
             <div onclick="javascript:window.location.reload();" style="cursor:pointer; position:relative;z-index:1;" id='hideMe'><img style="width:15%;display: block; margin: 0 auto;opacity: 0.5; padding-top:20%;padding-bottom:40%;" src="assets/img/reload.png"></div>
