@@ -10,7 +10,7 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-      
+
     <!-- Fonts -->
     <link href="assets/fonts/raleway.css" rel="stylesheet">
     <!-- Icons -->
@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/main-css.css">
     <script src="assets/js/vendor/modernizr-2.7.1.min.js"></script>
-      
+
     <script src="assets/offline/h5utils.js"></script>
     <script src="assets/js/vendor/jquery-2.1.0.min.js"></script>
-      
+
     <style>#hideMe {
     -moz-animation: cssAnimation 0s ease-in 15s forwards;
     /* Firefox */
@@ -55,17 +55,17 @@
     }
       #hideMe:hover {opacity: 0;};
       </style>
-      
+
     <script>$(function(){
-    $("#contentloader").load("http://lib.designer.web.id/content-helper-css.html");
-    $("#contentloader2").load("http://lib.designer.web.id/content-helper2-css.html"); 
-    $("#rightloader").load("http://lib.designer.web.id/content-right-css.html"); 
-    $("#leftloader").load("http://lib.designer.web.id/content-left-css.html"); 
-    });</script> 
+    $("#contentloader").load("http://lib.designer.web.id/content-cms-css.html");
+    $("#contentloader2").load("http://lib.designer.web.id/content-cms2-css.html");
+    $("#rightloader").load("http://lib.designer.web.id/content-right.html");
+    $("#leftloader").load("http://lib.designer.web.id/content-left.html");
+    });</script>
   </head>
-  
+
   <body>
-        
+
     <!-- Main Container -->
     <div id="main" class="main">
 
@@ -83,28 +83,28 @@
 
       <!-- Page Contents -->
       <div class="animated">
-        
+
       <!-- Hero Header -->
       <div class="hero-material">
         <div class="parallax primary-color">
-            
+
             <div class="fixed-action-btn floating-button animated bouncein delay-3 horizontal click-to-toggle">
               <a class="btn-floating btn-large waves-effect waves-light accent-color modal-trigger" href="#modal1">
                 <i class="ion-android-add"></i>
               </a>
             </div>
-              
-          <div class="top-news animated fadeinup delay-3" style="margin-left:50px;">    
+
+          <div class="top-news animated fadeinup delay-3" style="margin-left:50px;">
             <h4 class="top-news-title">
-              <a>CSS, Sass, LESS and<br/>Stylus libraries.</a>
+              <a>JavaScript libraries, frameworks, and plugins.</a>
             </h4>
-            <span class="top-news-channel"><b>CATEGORY:</b> HELPER</span>
-              
+            <span class="top-news-channel"><b>CATEGORY:</b> ANIMATION</span>
+
             <div class="clr"></div>
           </div>
           </div>
       </div>
-          
+
         <div class="news">
             <article>
               <p style="font-size:0.7em;margin-left:5px;margin-bottom:-30px;"><span id="status"><span id="status"></span></p>
@@ -124,18 +124,18 @@
             addEvent(window, 'offline', online);
             online({ type: 'ready' });
             </script>
-            
+
             <span style="position:absolute;z-index:10;">
             <div id="contentloader"></div>
             <div id="contentloader2"></div>
             </span>
-          
+
             <div onclick="javascript:window.location.reload();" style="cursor:pointer; position:relative;z-index:1;" id='hideMe'><img style="width:15%;display: block; margin: 0 auto;opacity: 0.5; padding-top:20%;padding-bottom:40%;" src="assets/img/reload.png"></div>
           </div>
-      
-      </div> 
+
+      </div>
       <!-- End of Page Contents -->
-        
+
       <!-- Modal Structure -->
       <div id="modal1" class="modal bottom-sheet features">
         <div class="modal-content">
@@ -166,7 +166,7 @@
         <li class="sidenav-avatar" style="background:#1F285B;">
           <div class="bottom">
             <!-- Dropdown Trigger -->
-            <span class="dropdown-button waves-effect waves-light" data-activates="dropdown1"><img src="assets/img/css.png" style="width:10%; float:left; margin-left: -15px; margin-top: 13px; margin-right: 10px; ">CSS Database<i class="ion-android-arrow-dropdown right"></i></span>
+            <span class="dropdown-button waves-effect waves-light" data-activates="dropdown1"><img src="assets/img/css.png" style="width:10%; float:left; margin-left: -15px; margin-top: 13px; margin-right: 10px; ">CSS Javascript<i class="ion-android-arrow-dropdown right"></i></span>
             <!-- Dropdown Structure -->
             <ul id="dropdown1" class="dropdown-content">
               <li><a href="css-library.html"><img src="assets/img/css.png" style="width:10%; float:left; margin-left: -3px; margin-top: -3px; margin-right: 10px; ">CSS Database</a></li>
@@ -193,10 +193,10 @@
           <div id="rightloader"></div>
       </ul>
       <!-- End of Sidebars -->
-        
+
     </div>
     <!-- End of Main Container -->
-    
+
     <!-- Scripts -->
     <script src="assets/js/vendor/jquery-2.1.0.min.js"></script>
     <script src="assets/js/helper.js"></script>
