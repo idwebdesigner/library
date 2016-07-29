@@ -67,16 +67,38 @@
         <div class="valign">
           <div class="center-align animated fadein delay-1">
             <img src="assets/img/cms.png" style="width:30%; margin-left: 35%; ">
-              <h4 class="white-text" style="margin-top:10px;">INSTALL CMS DATABASE<br/>- HTML5 Library -</h4>
-            <H6 class="white-text small" style="line-height: 1.5rem";>A content management system libraries.<br/>Find and compare for the best...</H6>
-            <H6 class="white-text small" style="margin-top:-10px;" >A Project by IDWEBDesigner</H6>
+              <h4 class="white-text" style="margin-top:10px;">DATABASE NOT FOUND<br/>IN CMS LIBRARY</h4>
+
+            <H6 class="white-text small" style="line-height: 1.5rem;margin-left:0px;";>
+
+            <article>
+              <p><span id="status"><span id="status">checking...</span></p>
+              <ol id="state"></ol>
+            </article>
+            <script>
+            var statusElem  = document.getElementById('status'),
+                state               = document.getElementById('state');
+
+            function online(event) {
+              statusElem.className = navigator.onLine ? 'online' : 'offline';
+              statusElem.innerHTML = navigator.onLine ? '<br/>You&#39;re connected our server database,<br/><br/>Install HTML5 Library: A Full JavaScript libraries,<br/>frameworks, and plugins. CSS, Sass, LESS and<br/>Stylus libraries, and CMS.' : '<br/>You&#39;re offline, check network connection.<br/>content required internet access.<br/><br/>Upgrade / <a href="js-library.html"><u>Back to Free Library</u></a>';
+              state.innerHTML += '';
+            }
+
+            addEvent(window, 'online', online);
+            addEvent(window, 'offline', online);
+            online({ type: 'ready' });
+            </script>
+
+              </H6>
+
           </div>
           <div class="center-align animated fadein delay-3">
             <span class="white-text block p-20">
                 <!-- Unlock -->
                 <div class="animated bouncein delay-6">
                 <div class="unlock">
-                <a href="market://details?id=id.web.designer.cmsdatabase"><i class="ion-android-playstore"></i></a>
+                <a href="market://details?id=id.web.designer.html5library"><i class="ion-android-playstore"></i></a>
                 </div>
                 </div>
             </span>
